@@ -22,8 +22,8 @@ class Brand(Base):
 
 
 class Ads(Base):
-    __tablename__ = 'movie'
-    brand = Column(String(20), ForeignKey('Brand.name'))
+    __tablename__ = 'ads'
+    brand = Column(String(20), primary_key=True)
     year = Column(Integer)
     url = Column(String(255))
     youtube_url = Column(String(255))

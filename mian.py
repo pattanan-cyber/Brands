@@ -1,32 +1,7 @@
-import tkinter as tk
-import tkinter.ttk as ttk
-import matplotlib
+from models.modelbrand_ads import Brand, Ads
+from package.brand_ads import Brands
 
-matplotlib.use('TkAgg')
-from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
-from matplotlib.figure import Figure
-import pandas as pd
+db = Brands()
+sol = db.brand().name_eqaul('GOOGLE')
 
-
-class App(ttk.Frame):
-
-    def __init__(self, parent):
-        super().__init__(parent)
-        self.df = pd.read_csv("data/GlobalBrands.csv")
-        self.winfo_toplevel().title("Brands")
-        self.create_widgets()
-
-
-    def create_widgets(self):
-        self.frame_filter = ttk.Label(self, text="Please select your filters")
-        self.frame_filter.pack()
-
-
-
-
-if __name__ == "__main__":
-    root = tk.Tk()
-    root.title("Matplotlib Integration")
-    root.geometry("600x800")
-    app = App(root)
-    root.mainloop()
+print(sol)

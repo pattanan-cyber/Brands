@@ -45,7 +45,11 @@ use_sex = is the ads use sex or not.
 
 ## How to run
 
-#### create database using schema commands in a file
+#### install package.
+
+pip install -r requirements.txt
+
+#### create database using schema commands in a file.
 
 sqlite3 brands.db < brands.schema
 

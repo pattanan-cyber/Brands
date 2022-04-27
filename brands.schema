@@ -1,6 +1,6 @@
 CREATE TABLE IF NOT EXISTS brand
 (
-brand                   TEXT PRIMARY KEY,
+brand                   TEXT PRIMARY KEY AUTOINCREMENT,
 value                   INTEGER,
 change                  INTEGER,
 category                TEXT,
@@ -11,7 +11,7 @@ origin                  TEXT
 CREATE TABLE IF NOT EXISTS ads
 (
 year                    INTEGER,
-brand                   TEXT,
+brand                   TEXT PRIMARY KEY AUTOINCREMENT,
 url                     TEXT,
 youtube_url             TEXT,
 funny                   TEXT,
