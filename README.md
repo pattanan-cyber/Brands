@@ -47,7 +47,7 @@ use_sex = is the ads use sex or not.
 
 1. install package.
 
-pip install -r requirements.txt
+pip install -r requirement.txt
 
 2. create database using schema commands in a file.
 

@@ -6,7 +6,7 @@ from package.dao.brandDao import BrandDao
 
 class Brands:
 
-    def __init__(self, url = "sqlite:///package.db"):
+    def __init__(self, url = "sqlite:///brands.db"):
         engine = create_engine(url)
         session = sessionmaker(bind=engine)
         self.__db_session = session()

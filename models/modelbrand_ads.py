@@ -16,7 +16,7 @@ class Brand(Base):
 
 
     def __repr__(self):
-        return f"{self.name} has {self.value} Brand value, change in 2020 about " \
+        return f"{self.brand} has {self.value} Brand value, change in 2020 about " \
                f"{self.change}. The category is {self.category}, Rank change is {self.Rank_change} " \
                f"and it come from {self.origin}."
 
@@ -37,7 +37,7 @@ class Ads(Base):
 
 
     def __repr__(self):
-        return f"{self.name} produce ads in {self.year}, url is {self.url}." \
+        return f"{self.brand} produce ads in {self.year}, url is {self.url}." \
                f"and youtube url is {self.youtube_url}." \
                f"This ads funny = {self.danger}," \
                f"This ads show product quickly = {self.danger}," \
