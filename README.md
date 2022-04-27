@@ -14,7 +14,7 @@ Change = Brand Value Change vs 2020.
 Origin = Market of Origin.
 
 
-# Superbowl table
+# ads table
 
 name = name of brands's ads that get superbowl.
 
