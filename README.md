@@ -23,3 +23,19 @@ Year = year that get superbowl.
 Danger = is the ads danger or not.
 
 Url = url link of ads.
+
+
+## How to run
+
+### create database using schema commands in a file
+
+sqlite3 brands.db < brands.schema
+
+
+### then import data from a CSV file.
+
+sqlite> .mode csv
+
+sqlite> .import data/GlobalBrands.csv brands
+
+sqlite> .import data/superbowl-ads.csv ads
