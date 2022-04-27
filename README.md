@@ -45,19 +45,20 @@ use_sex = is the ads use sex or not.
 
 ## How to run
 
-#### install package.
+1. install package.
 
 pip install -r requirements.txt
 
-#### create database using schema commands in a file.
+2. create database using schema commands in a file.
 
 sqlite3 brands.db < brands.schema
 
-
-#### then import data from a CSV file.
+3. then import data from a CSV file.
 
 sqlite> .mode csv
 
 sqlite> .import data/GlobalBrands.csv brands
 
 sqlite> .import data/superbowl-ads.csv ads
+
+4. run main
