@@ -26,4 +26,3 @@ class Ads(Base):
 
     def __repr__(self):
         return f"{self.name} produce ads in {self.year}, url is {self.url}.This ads has danger = {self.danger}"
-
