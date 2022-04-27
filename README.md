@@ -3,7 +3,7 @@
 this simple application show data about the global brands and super bowl ads.
 
 
-# Brand table
+## Brand table
 
 name = name of brands.
 
@@ -14,7 +14,7 @@ Change = Brand Value Change vs 2020.
 Origin = Market of Origin.
 
 
-# ads table
+## ads table
 
 name = name of brands's ads that get superbowl.
 
