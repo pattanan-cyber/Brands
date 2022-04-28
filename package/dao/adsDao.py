@@ -6,5 +6,5 @@ from models.modelbrand_ads import Brand, Ads
 
 class AdsDao(Dao):
 
-    def get_user_by_id(self, brand):
+    def get_brand(self, brand):
         return self.session.query(Ads).filter(Ads.brand == brand)
